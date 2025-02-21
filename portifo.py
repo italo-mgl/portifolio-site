@@ -12,16 +12,18 @@ about_page = st.Page(
     default= True,
 )
 
+
+
 project_1_page = st.Page(
-    page="views/dashboard.py",
-    title="Sales Dashboard",
-    icon="😁",
+    page="views/PowerBi.py",
+    title="Power Bi",
+    icon="📊"
 )
 
 project_2_page = st.Page(
-    page="views/chatbot.py",
-    title="Chat Bot",
-    icon="👍",
+    page="views/dashboard.py",
+    title="Python",
+    icon="🐍",
 )
 
 ## Navigation setup - without sections 
@@ -31,21 +33,32 @@ project_2_page = st.Page(
 
 pg = st.navigation(
     {"Sobre": [about_page],
-    "Projects":[project_1_page, project_2_page]
+    "Projects":[project_1_page, project_2_page],
+    "Currículo":[]
     }
 )
 
 ## Logo image
 
-#st.logo("assets/painel (1).jpg", size="small")
 st.sidebar.text("Entre em contato")
-st.sidebar.markdown(
-    """
-    <a href="https://www.linkedin.com/in/magalhaes-italo/" target="_blank">
-        <img src="assets/painel.png" alt="Ícone" style="width:50px;height:50px;">
-    </a>
-    """, 
-    unsafe_allow_html=True
-)
+
+##st.sidebar.image("views/assets/linkedin.png", width=30)
+
+
+
+col5, col6, col7, col8 = st.sidebar.columns(4,border=True)
+
+with col5:
+    st.image("views/assets/linkedin.png", width=25)
+
+with col6:
+    st.image("views/assets/linkedin.png", width=25)
+
+with col7:
+    st.image("views/assets/linkedin.png", width=25)
+
+with col8:
+    st.image("views/assets/linkedin.png", width=25)
+
 ## RUN Navigation
 pg.run()

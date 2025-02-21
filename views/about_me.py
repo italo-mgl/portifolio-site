@@ -13,21 +13,14 @@ def show_contact_form():
 
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 with col1:
-     st.markdown(
-        """
-        <a href="https://www.linkedin.com/in/magalhaes-italo/" target="_blank">
-            <img src=https://media.licdn.com/dms/image/v2/D4D03AQENIb_3XPW3qw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721253821571?e=1745452800&v=beta&t=xCoh-BJ-_GkzjfDNZHBiUOuy1LqRZZTisqWIcCOxV1E" ""
-            alt="Ícone" style="width:100%;">
-        </a>
-        """,
-        unsafe_allow_html=True
-    )
+        st.image("views/assets/perfil.png")
+        
 with col2:
     st.title("Itin", anchor= False)
     st.write(
         " Analista de Sistemas, com experiencia em DEVOPS"
     )
-    if st.button("✉️Contact Me"):
+    if st.button("✉️ Entrar em contato"):
         show_contact_form()
 
 ## Experiencias e qualificações ##
@@ -35,20 +28,47 @@ st.write("\n")
 st.subheader("Experiência e Certificações", anchor=False)
 st.write(
     """
-    - Testador de funilaria profissional - Funilaria de Seu Carlos
-    - Habilidoso com conversações de merda e enganação de público
-    - Fazedor de tinturaria
+    - Analista de Processos - Hostweb Data Center.
+    - Engenheiro Agrônomo - Universidade Federal do Ceará.
+    - Analista de Sistemas - Faculdade UNIASSELVI.
 """
 )
 
+## Experiências ##
+st.write("\n")
+st.subheader("Experiências", anchor=False)
+st.write("""
+    - Bibliotecas para tratamento e análise de dados em Python (Pandas, Numpy, Matplotlib e Seaborn).
+    - Modelagem e Análise exploratória de dados (PowerBi e DAX).
+    - Normalização, limpeza e processamento de dados (PowerBI, DAX e Python).
+    - Criação de dashboards com Power BI, Python.
+    - Gerenciamento e requisições de API'S com Python.
+    - Gerenciamento de banco de dados com SQL.
+         """)
+
 ## skiils ##
 st.write("\n")
-st.subheader("Skills Técnicas")
-st.write(
-    """
-    - 🐍 Python
-    - 📊 Power BI
-    - 📊 Tableu
-    - 🐘 PostgreSQL
-"""
-)
+st.subheader("Linguagens e Tecnologias")
+
+# Ajustando as colunas lado a lado
+col3, col4 = st.columns(2)
+
+with col3:
+    st.write(
+        """
+        - 🐍 Python
+        - 📊 Power BI
+        - 📊 Excel
+        - 🐘 PostgreSQL
+        """
+    )
+
+with col4:
+    st.write(
+        """
+        - 🛢️ Databricks
+        - ⚙️ Power Automate
+        - 💻 Git/GitHub
+        - 📈 SQL Server
+        """
+    )
