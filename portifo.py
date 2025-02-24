@@ -26,6 +26,12 @@ project_2_page = st.Page(
     icon="🐍",
 )
 
+curriculo_page = st.Page(
+    page="views/curriculo.py",
+    title="Curriculo",
+    icon ="📝"
+)
+
 ## Navigation setup - without sections 
 #pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
 
@@ -33,8 +39,8 @@ project_2_page = st.Page(
 
 pg = st.navigation(
     {"Sobre": [about_page],
-    "Projects":[project_1_page, project_2_page],
-    "Currículo":[]
+    "Projetos":[project_1_page, project_2_page],
+    "Currículo":[curriculo_page]
     }
 )
 
@@ -46,19 +52,19 @@ st.sidebar.text("Entre em contato")
 
 
 
-col5, col6, col7, col8 = st.sidebar.columns(4,border=True)
+col5, col6 = st.sidebar.columns(2,border=False, gap="small")
 
 with col5:
-    st.image("views/assets/linkedin.png", width=25)
+    st.image("views/assets/linkedin.png", width=40)
 
 with col6:
-    st.image("views/assets/linkedin.png", width=25)
+    st.image("views/assets/e-mail.png", width=40)
 
-with col7:
-    st.image("views/assets/linkedin.png", width=25)
+#with col7:
+    #st.image("views/assets/linkedin.png", width=50)
 
-with col8:
-    st.image("views/assets/linkedin.png", width=25)
+#with col8:
+    #st.image("views/assets/linkedin.png", width=50)
 
 ## RUN Navigation
 pg.run()

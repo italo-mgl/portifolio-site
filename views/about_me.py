@@ -11,6 +11,8 @@ def show_contact_form():
 
 # HERO SECTION #
 
+
+        
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 with col1:
         st.image("views/assets/perfil.png")
@@ -22,6 +24,9 @@ with col2:
     )
     if st.button("✉️ Entrar em contato"):
         show_contact_form()
+    if st.button("📝Curriculo"):
+         show_contact_form()
+         
 
 ## Experiencias e qualificações ##
 st.write("\n")
