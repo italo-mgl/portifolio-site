@@ -13,7 +13,7 @@ def contact_form():
     with st.form("contact_form"):
         name = st.text_input("Nome:")
         email = st.text_input("E-mail:")
-        message = st.text_area("Mensagem:", height = 150)
+        message = st.text_area("Mensagem:", height=150)
         submit_button = st.form_submit_button("Enviar")
 
     if submit_button:
@@ -38,11 +38,16 @@ def contact_form():
             st.stop()
 
         # Prepare the data payload and send it to the specified webhook URL
-        data = {"E-mail:": email, "Nome:": name, "Mensagem:": message}
-        response = requests.post(WEBHOOK_URL)
-        # response = requests.post(WEBHOOK_URL, json=data)
+        data = {
+            "email": email,
+            "nome": name,
+            "mensagem": message
+        }
+        
+        response = requests.post(WEBHOOK_URL, json=data)
 
-        if response.status_code == 200:
+        if response.status_code == 202:
             st.success("Sua mensagem foi enviada com sucesso!🎉", icon="🚀")
         else:
-            st.error("Ocorreu um erro ao enviar sua mensagem.", icon="😨")
+            st.error("Ocorreu um erro ao enviar sua mensagem. Código de status: {}".format(response.status_code), icon="😨")
+
