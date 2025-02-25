@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import re
 
-WEBHOOK_URL = st.secrets["WEBHOOK_URL"]
+WEBHOOK_URL = ["https://prod-08.brazilsouth.logic.azure.com:443/workflows/f3cf0bd7d1dc410c87f30580e43fb633/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=tCRCcL3Fzfh2oLmv7yIBj5y894w30WjmHRjDXMWYd8U"]
 
 def is_valid_email(email):
     # Basic regex pattern for email validation
@@ -44,7 +44,7 @@ def contact_form():
             "mensagem": message
         }
         
-        response = requests.post(WEBHOOK_URL, json=data)
+        response = requests.post(WEBHOOK_URL[0], json=data)
 
         if response.status_code == 202:
             st.success("Sua mensagem foi enviada com sucesso!🎉", icon="🚀")
