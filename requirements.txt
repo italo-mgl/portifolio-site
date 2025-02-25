@@ -1,5 +1,4 @@
 pandas==1.5.3  
-xlrd==1.2.0 
 Requests==2.32.3
 streamlit==1.36.0
 Pillow==9.2.0
