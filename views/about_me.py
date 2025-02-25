@@ -7,7 +7,7 @@ from forms.contact import contact_form
 def show_contact_form():
     contact_form()
 
-
+curr_pdf = "views/assets/Ítalo_s_Resume.pdf"
 
 # HERO SECTION #
 
@@ -24,8 +24,14 @@ with col2:
     )
     if st.button("✉️ Entrar em contato"):
         show_contact_form()
-    if st.button("📝Curriculo"):
-         show_contact_form()
+    
+    with open(curr_pdf, "rb") as pdf_file:
+         btn = st.download_button(
+              label= "📝Curriculo",
+              data=pdf_file,
+              file_name="Italo_Magalhaes_CV.pdf",
+              mime="application/pdf"
+         )
          
 
 ## Experiencias e qualificações ##
