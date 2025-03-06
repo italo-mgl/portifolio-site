@@ -18,9 +18,9 @@ with col1:
         st.image("views/assets/perfil.png")
         
 with col2:
-    st.title("Itin", anchor= False)
+    st.title("Ítalo Magalhães", anchor= False)
     st.write(
-        " Analista de Sistemas, com experiencia em DEVOPS"
+        " Analista de Dados | Analista de Processos."
     )
     if st.button("✉️ Entrar em contato"):
         show_contact_form()
@@ -42,18 +42,20 @@ st.write(
     - Analista de Processos - Hostweb Data Center.
     - Engenheiro Agrônomo - Universidade Federal do Ceará.
     - Analista de Sistemas - Faculdade UNIASSELVI.
+    - Data Science and Artificial Intelligence - Datatech Florida USA
 """
 )
 
 ## Experiências ##
 st.write("\n")
-st.subheader("Experiências", anchor=False)
+st.subheader("Habilidades", anchor=False)
 st.write("""
-    - Bibliotecas para tratamento e análise de dados em Python (Pandas, Numpy, Matplotlib e Seaborn).
-    - Modelagem e Análise exploratória de dados (PowerBi e DAX).
-    - Normalização, limpeza e processamento de dados (PowerBI, DAX e Python).
-    - Criação de dashboards com Power BI, Python.
-    - Gerenciamento e requisições de API'S com Python.
+    - Analises estatísticas, Testes A/B, Analise Ad Hoc;
+    - Modelagem e Análise exploratória de dados (PowerBi e DAX);
+    - Bibliotecas para tratamento e análise de dados em Python (Pandas, Numpy, Matplotlib e Seaborn);
+    - Normalização, limpeza e processamento de dados (PowerBI, DAX e Python);
+    - Criação de dashboards com Power BI, Python, Streamlit;
+    - Gerenciamento e requisições de API'S com Python;
     - Gerenciamento de banco de dados com SQL.
          """)
 

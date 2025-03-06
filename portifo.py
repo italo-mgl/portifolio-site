@@ -8,7 +8,7 @@ st.set_page_config( page_title="Ítalo Magalhães - Portifólio")
 about_page = st.Page(
     page="views/about_me.py",
     title="Sobre mim",
-    icon="👌",
+    icon="🖥️",
     default= True,
 )
 
@@ -31,8 +31,6 @@ curriculo_page = st.Page(
     title="Curriculo",
     icon ="📝"
 )
-
-## Navigation setup - without sections 
 
 ## Navigation setup - with sections
 
