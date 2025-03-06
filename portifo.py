@@ -53,29 +53,26 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
+# URLs das imagens e links
 image_url = "https://cdn-icons-png.flaticon.com/512/145/145807.png"
 link_url = "https://www.linkedin.com/in/magalhaes-italo/"
-
 image_url2 = "https://cdn-icons-png.flaticon.com/512/25/25231.png"
 link_url2 = "https://github.com/italo-mgl"
 
-col5, col6 = st.sidebar.columns(2,border=False, gap="small")
-
-with col5:
-    #st.image("views/assets/linkedin.png", width=40)
-    st.markdown(
-    f'<a href="{link_url}" target="_blank">'
-    f'<img src="{image_url}" width="45"></a>', 
+# Criando uma div para alinhar os ícones
+st.sidebar.markdown(
+    """
+    <div style="display: flex; justify-content: center; gap: 40px;">
+    <a href="{}" target="_blank">
+        <img src="{}" width="45">
+    </a>
+    <a href="{}" target="_blank">
+        <img src="{}" width="45">
+    </a>
+    </div>
+    """.format(link_url, image_url, link_url2, image_url2),
     unsafe_allow_html=True
-    )
-with col6:
-    #st.image("views/assets/github.png", width=40)
-
-    st.markdown(
-    f'<a href="{link_url2}" target="_blank">'
-    f'<img src="{image_url2}" width="40"></a>', 
-    unsafe_allow_html=True
-    )
+)
 
 ## RUN Navigation
 pg.run()
