@@ -33,7 +33,6 @@ curriculo_page = st.Page(
 )
 
 ## Navigation setup - without sections 
-#pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
 
 ## Navigation setup - with sections
 
@@ -44,27 +43,39 @@ pg = st.navigation(
     }
 )
 
-## Logo image
 
-st.sidebar.text("Entre em contato")
+st.sidebar.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h4>Redes</h4>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 
-##st.sidebar.image("views/assets/linkedin.png", width=30)
+image_url = "https://cdn-icons-png.flaticon.com/512/145/145807.png"
+link_url = "https://www.linkedin.com/in/magalhaes-italo/"
 
-
+image_url2 = "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+link_url2 = "https://github.com/italo-mgl"
 
 col5, col6 = st.sidebar.columns(2,border=False, gap="small")
 
 with col5:
-    st.image("views/assets/linkedin.png", width=40)
-
+    #st.image("views/assets/linkedin.png", width=40)
+    st.markdown(
+    f'<a href="{link_url}" target="_blank">'
+    f'<img src="{image_url}" width="45"></a>', 
+    unsafe_allow_html=True
+    )
 with col6:
-    st.image("views/assets/e-mail.png", width=40)
+    #st.image("views/assets/github.png", width=40)
 
-#with col7:
-    #st.image("views/assets/linkedin.png", width=50)
-
-#with col8:
-    #st.image("views/assets/linkedin.png", width=50)
+    st.markdown(
+    f'<a href="{link_url2}" target="_blank">'
+    f'<img src="{image_url2}" width="40"></a>', 
+    unsafe_allow_html=True
+    )
 
 ## RUN Navigation
 pg.run()
