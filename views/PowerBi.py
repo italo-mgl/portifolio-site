@@ -37,7 +37,7 @@ st.markdown(
     f"""
     <div style="text-align: center; margin: 20px;">
         <a href="{bi_link}" target="_blank" style="text-decoration: none;">
-            <img src="https://scontent-for2-1.xx.fbcdn.net/v/t39.30808-6/482279230_122108857934786829_8037870845834313548_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EOSQKDdOXHQQ7kNvgHquNuq&_nc_oc=AdgTLprGUCANdN-7bXyypMKXOs62Kvtw8hGLlgCgYERYmwKjg-IvJ8bsCzP7u2n3tq0&_nc_zt=23&_nc_ht=scontent-for2-1.xx&_nc_gid=A8F2WQFBiQmNGy86uB5lMz5&oh=00_AYD4lJtGaDflcuqKUZg2cd7JIQBkXC1l3VYni_teVvvMVQ&oe=67CFC908" alt="Dashboard" style="width: 100%; max-width: 800px; transition: transform 0.3s;">
+            <img src="https://i.ibb.co/jkX3HDCZ/dash-cars.png" alt="Dashboard" style="width: 100%; max-width: 800px; transition: transform 0.3s;">
             <h3 style="transition: color 0.3s;">Dashboard de Vendas de Carros</h3>
         </a>
     </div>
