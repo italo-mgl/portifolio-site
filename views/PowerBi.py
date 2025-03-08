@@ -37,7 +37,7 @@ st.markdown(
     f"""
     <div style="text-align: center; margin: 20px;">
         <a href="{bi_link}" target="_blank" style="text-decoration: none;">
-            <img src="https://i.ibb.co/jkX3HDCZ/dash-cars.png" alt="Dashboard" style="width: 100%; max-width: 800px; transition: transform 0.3s;">
+            <img src="https://i.ibb.co/jk7G24zn/dash-cars.png" alt="Dashboard" style="width: 100%; max-width: 800px; transition: transform 0.3s;">
             <h3 style="transition: color 0.3s;">Dashboard de Vendas de Carros</h3>
         </a>
     </div>
