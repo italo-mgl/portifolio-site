@@ -31,12 +31,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-bi_link = "https://app.powerbi.com/view?r=eyJrIjoiMDIyMWYxYjktODI5ZS00NWMxLWIxNTItNTg0MGEzMDBkZTcwIiwidCI6Ijk4YTQ3YjdhLTBjMzYtNGUyNy04MGE3LTZjMDU2YzdjMWI0NCJ9"
+bi_link_car = "https://app.powerbi.com/view?r=eyJrIjoiMDIyMWYxYjktODI5ZS00NWMxLWIxNTItNTg0MGEzMDBkZTcwIiwidCI6Ijk4YTQ3YjdhLTBjMzYtNGUyNy04MGE3LTZjMDU2YzdjMWI0NCJ9"
 
 st.markdown(
     f"""
     <div style="text-align: center; margin: 20px;">
-        <a href="{bi_link}" target="_blank" style="text-decoration: none;">
+        <a href="{bi_link_car}" target="_blank" style="text-decoration: none;">
             <img src="https://i.ibb.co/jk7G24zn/dash-cars.png" alt="Dashboard" style="width: 100%; max-width: 800px; transition: transform 0.3s;">
             <h3 style="transition: color 0.3s;">Dashboard de Vendas de Carros</h3>
         </a>
@@ -73,18 +73,18 @@ st.markdown(
 st.markdown(
     """
     <div style="display: flex; justify-content: center;">
-        <iframe title="Elertro Vendas" width="1000" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiN2FkZWM3ZTUtOWNiOS00NTlhLWJlZjgtYTQ1YWU3NDc4ZWViIiwidCI6Ijk4YTQ3YjdhLTBjMzYtNGUyNy04MGE3LTZjMDU2YzdjMWI0NCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="Elertro Vendas" width="1000" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiN2FkZWM3ZTUtOWNiOS00NTlhLWJlZjgtYTQ1YWU3NDc4ZWViIiwidCI6Ijk4YTQ3YjdhLTBjMzYtNGUyNy04MGE3LTZjMDU2YzdjMWI0NCJ9&pageName=ReportSection12a8a72e6fa50197971d" frameborder="0" allowFullScreen="true"></iframe>
     </div>
     """,
     unsafe_allow_html=True
 )
 
-bi_link = "https://app.powerbi.com/view?r=eyJrIjoiN2FkZWM3ZTUtOWNiOS00NTlhLWJlZjgtYTQ1YWU3NDc4ZWViIiwidCI6Ijk4YTQ3YjdhLTBjMzYtNGUyNy04MGE3LTZjMDU2YzdjMWI0NCJ9"
+bi_link_vend = "https://app.powerbi.com/view?r=eyJrIjoiN2FkZWM3ZTUtOWNiOS00NTlhLWJlZjgtYTQ1YWU3NDc4ZWViIiwidCI6Ijk4YTQ3YjdhLTBjMzYtNGUyNy04MGE3LTZjMDU2YzdjMWI0NCJ9&pageName=ReportSection12a8a72e6fa50197971d"
 
 st.markdown(
     f"""
     <div style="text-align: center; margin: 20px;">
-        <a href="{bi_link}" target="_blank" style="text-decoration: none;">
+        <a href="{bi_link_vend}" target="_blank" style="text-decoration: none;">
             <img src="https://i.ibb.co/5h0Z4Nb3/dash-vendas.png" alt="Dashboard" style="width: 100%; max-width: 800px; transition: transform 0.3s;">
             <h3 style="transition: color 0.3s;">Dashboard Análise de Vendas</h3>
         </a>
