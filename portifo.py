@@ -21,9 +21,15 @@ project_1_page = st.Page(
 )
 
 project_2_page = st.Page(
-    page="views/dashboard.py",
+    page="views/python.py",
     title="Python",
     icon="🐍",
+)
+
+project_3_page = st.Page(
+    page="views/sql.py",
+    title="SQL",
+    icon="🛢️",
 )
 
 curriculo_page = st.Page(
@@ -36,7 +42,7 @@ curriculo_page = st.Page(
 
 pg = st.navigation(
     {"Sobre": [about_page],
-    "Projetos":[project_1_page, project_2_page],
+    "Projetos":[project_1_page, project_2_page, project_3_page],
     "Currículo":[curriculo_page]
     }
 )
