@@ -2,14 +2,27 @@ import streamlit as st
 
 st.title("Projetos com SQL")
 
-bi_link_car = "https://app.powerbi.com/view?r=eyJrIjoiMDIyMWYxYjktODI5ZS00NWMxLWIxNTItNTg0MGEzMDBkZTcwIiwidCI6Ijk4YTQ3YjdhLTBjMzYtNGUyNy04MGE3LTZjMDU2YzdjMWI0NCJ9"
+st.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 10px;">
+        <p style="font-size: 32px; font-weight: bold;">E.D.A Utilizando SQL no SQL Server:</p>
+        <p style="font-size: 16px;"> 
+        Analises feitas: Exploração DB, Exploração de Dimensões, Datas, Medidas, Magnitudes e Ranking.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+repo_sql = "https://github.com/italo-mgl/sql_estudos/tree/main/E.D.A%20SQL"
 
 st.markdown(
     f"""
     <div style="text-align: center; margin: 20px;">
-        <a href="{bi_link_car}" target="_blank" style="text-decoration: none;">
-            <img src="https://i.ibb.co/jk7G24zn/dash-cars.png" alt="Dashboard" style="width: 100%; max-width: 800px; transition: transform 0.3s;">
-            <h3 style="transition: color 0.3s;">Dashboard de Vendas de Carros</h3>
+        <a href="{repo_sql}" target="_blank" style="text-decoration: none;">
+            <img src="https://i.ibb.co/vx16xvY3/EDA-sql2.png" alt="Dashboard" style="width: 80%; max-width: 500px; transition: transform 0.3s;">
+            <h3 style="transition: color 0.3s;">E.D.A com SQL</h3>
         </a>
     </div>
 
