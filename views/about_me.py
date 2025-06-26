@@ -7,10 +7,9 @@ from forms.contact import contact_form
 def show_contact_form():
     contact_form()
 
-curr_pdf = "views/assets/Ítalo_s_Resume.pdf"
+curr_pdf = "views/assets/Italo_Magalhaes-Data-Analyst.pdf"
 
 # HERO SECTION #
-
 
         
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
@@ -20,7 +19,7 @@ with col1:
 with col2:
     st.title("Ítalo Magalhães", anchor= False)
     st.write(
-        " Analista de Dados | Analista de Processos."
+        " Analista de Dados."
     )
     if st.button("✉️ Entrar em contato"):
         show_contact_form()
@@ -29,7 +28,7 @@ with col2:
          btn = st.download_button(
               label= "📝Curriculo",
               data=pdf_file,
-              file_name="Italo_Magalhaes_CV.pdf",
+              file_name="Italo_Magalhaes_Data-Analyst.pdf",
               mime="application/pdf"
          )
          
@@ -39,7 +38,7 @@ st.write("\n")
 st.subheader("Experiência e Certificações", anchor=False)
 st.write(
     """
-    - Analista de Processos - Hostweb Data Center.
+    - Analista de Dados - Hostweb Data Center.
     - Engenheiro Agrônomo - Universidade Federal do Ceará.
     - Analista de Sistemas - Faculdade UNIASSELVI.
     - Data Science and Artificial Intelligence - Datatech Florida USA
@@ -79,7 +78,7 @@ with col3:
 with col4:
     st.write(
         """
-        - 🛢️ Databricks
+        - ⚙️ n8n
         - ⚙️ Power Automate
         - 💻 Git/GitHub
         - 📈 SQL Server
